@@ -1,1 +1,50 @@
-/*# sourceMappingURL=style.css.map */
+.header-menu {
+  margin-top: 30px;
+  margin-right: 30px;
+}
+.header-menu .header-li {
+  display: flex;
+  justify-content: end;
+}
+.header-menu .header-li li {
+  margin-right: 40px;
+}
+
+.kv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.kv .kv-logo {
+  position: absolute;
+  top: 5px;
+  left: 50px;
+  z-index: 1;
+}
+.kv .kv-img {
+  position: relative;
+  margin-top: 50px;
+}
+.kv .kv-text {
+  position: absolute;
+  z-index: 1;
+  bottom: 160px;
+  right: 140px;
+}
+
+.kv-p {
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .header-menu {
+    display: none;
+  }
+  .kv {
+    flex-direction: column;
+    align-items: center;
+  }
+  .kv .kv-logo {
+    z-index: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
