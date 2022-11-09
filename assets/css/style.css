@@ -1,19 +1,27 @@
+body {
+  width: 1152px;
+  margin: 0 auto;
+}
+
 .header-menu {
   margin-top: 30px;
-  margin-right: 30px;
 }
 .header-menu .header-li {
   display: flex;
   justify-content: end;
 }
 .header-menu .header-li li {
-  margin-right: 40px;
+  margin-left: 20px;
 }
 
-.kv {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.content {
+  width: 89%;
+  margin: 0 auto;
+}
+
+.kv .sp-img,
+.kv .sp-text {
+  display: none;
 }
 .kv .kv-logo {
   position: absolute;
@@ -28,7 +36,7 @@
 .kv .kv-text {
   position: absolute;
   z-index: 1;
-  bottom: 160px;
+  bottom: 230px;
   right: 140px;
 }
 
@@ -40,11 +48,18 @@
   .header-menu {
     display: none;
   }
-  .kv {
-    flex-direction: column;
-    align-items: center;
+  .content {
+    width: 100%;
   }
-  .kv .kv-logo {
-    z-index: 0;
+  .content .kv .kv-logo {
+    margin: 50px auto;
+  }
+  .content .kv .kv-img,
+.content .kv .kv-text {
+    display: none;
+  }
+  .content .kv .sp-img,
+.content .kv .sp-text {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
