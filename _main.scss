@@ -1,0 +1,120 @@
+.articles-wrap {
+    // width: 1024px;
+
+    h1 {
+        text-align: center;
+        font-size: 25px;
+        margin-top: 80px;
+
+    }
+
+    .articles-content {
+        width: 1024px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+
+        margin: 50px auto 0 auto;
+
+        .post-wrap {
+            &:hover {
+                box-shadow: 0 0 20px 5px lightgray;
+            }
+
+            img {
+                width: 320px;
+                height: auto;
+            }
+
+            .post-content {
+                margin: 12px 16px;
+
+
+                .post-title {
+                    font-size: 14px;
+                    height: 120px;
+
+                    .post-text {
+                        margin-top: 15px;
+                    }
+                }
+
+                .readmore {
+                    font-size: 8px;
+                    text-align: right;
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 14px;
+                        border-bottom: solid 1px black;
+                        position: absolute;
+                        top: 25px;
+                        right: -1px;
+                    }
+
+                    &:hover::after {
+                        content: '';
+                        position: absolute;
+                        left: 100%;
+                        bottom: 0;
+                        width: 65px;
+                        transform: translateX(-100%);
+                        transform: 15s;
+                        border-bottom: solid 1px black;
+                        animation: border_anim 2s;
+                    }
+                    @keyframes border_anim {
+                        0%{
+                            width: 14px;
+                        }
+                        100%{
+                            width: 65px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+
+$sp: 767px;
+
+@media screen and (max-width: $sp) {
+    .articles-wrap {
+        h1 {
+            margin-top: 40px;
+        }
+
+        .articles-content {
+            display: block;
+            grid-template-columns: none;
+            gap: 0;
+            width: 760px;
+            margin-top: 15px;
+
+            .post-wrap {
+                width: 630px;
+                margin: 30px auto;
+
+                img {
+                    width: 630px;
+                    height: auto;
+                }
+
+                .post-content {
+
+
+                    .post-title {
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+}
