@@ -100,7 +100,6 @@ body {
   margin-top: 80px;
 }
 .articles-wrap .articles-content {
-  width: 1024px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -109,8 +108,28 @@ body {
 .articles-wrap .articles-content .post-wrap:hover {
   box-shadow: 0 0 20px 5px lightgray;
 }
+.articles-wrap .articles-content .post-wrap:hover .readmore::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 101%;
+  bottom: 0;
+  width: 65px;
+  transform: translateX(-101%);
+  transform: 15s;
+  border-bottom: solid 1px black;
+  animation: border_anim 0.6s linear forwards;
+}
+@keyframes border_anim {
+  0% {
+    width: 14px;
+  }
+  100% {
+    width: 65px;
+  }
+}
 .articles-wrap .articles-content .post-wrap img {
-  width: 320px;
+  width: 100%;
   height: auto;
 }
 .articles-wrap .articles-content .post-wrap .post-content {
@@ -127,6 +146,7 @@ body {
   font-size: 8px;
   text-align: right;
   position: relative;
+  padding-bottom: 25px;
 }
 .articles-wrap .articles-content .post-wrap .post-content .readmore::after {
   content: "";
@@ -136,25 +156,6 @@ body {
   position: absolute;
   top: 25px;
   right: -1px;
-}
-.articles-wrap .articles-content .post-wrap .post-content .readmore:hover::after {
-  content: "";
-  position: absolute;
-  left: 100%;
-  bottom: 0;
-  width: 65px;
-  transform: translateX(-100%);
-  transform: 15s;
-  border-bottom: solid 1px black;
-  animation: border_anim 2s;
-}
-@keyframes border_anim {
-  0% {
-    width: 14px;
-  }
-  100% {
-    width: 65px;
-  }
 }
 
 @media screen and (max-width: 767px) {
