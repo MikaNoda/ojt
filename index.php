@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documen</title>
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/reset.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
@@ -23,11 +23,11 @@
         </div>
         <div class="content">
             <div class="kv">
-                <img class="kv-logo" src="./img/logo.png" alt="logo">
-                <img class="kv-img" src="./img/visual_1_pc.png" alt="kv">
-                <img class="sp-img" src="./img/visual_1_sp.png" alt="kv">
-                <img class="kv-text" src="./img/visual_text_pc.png" alt="text">
-                <img class="sp-text" src="./img/visual_text_sp.png" alt="text">
+                <img class="kv-logo" src="<?php echo get_template_directory_uri();?>/img/logo.png" alt="logo">
+                <img class="kv-img" src="<?php echo get_template_directory_uri();?>/img/visual_1_pc.png" alt="kv">
+                <img class="sp-img" src="<?php echo get_template_directory_uri();?>/img/visual_1_sp.png" alt="kv">
+                <img class="kv-text" src="<?php echo get_template_directory_uri();?>/img/visual_text_pc.png" alt="text">
+                <img class="sp-text" src="<?php echo get_template_directory_uri();?>/img/visual_text_sp.png" alt="text">
             </div>
             <p class="kv-p">進化し続ける「街」アメリカンビレッジマガジン</p>
             <p class="sp-p">進化し続ける「街」<br>アメリカンビレッジマガジン</p>
@@ -40,7 +40,7 @@
             <article class="articles-content">
                 <div class="post-wrap">
                     <div>
-                        <img src="./img/post_img_1.png" alt="">
+                        <img src="<?php echo get_template_directory_uri();?>/img/post_img_1.png" alt="">
                     </div>
                     <div class="post-content">
                         <div class="post-title">
@@ -54,7 +54,7 @@
                 </div>
                 <div class="post-wrap">
                     <div>
-                        <img src="./img/post_img_2.png" alt="">
+                        <img src="<?php echo get_template_directory_uri();?>/img/post_img_2.png" alt="">
                     </div>
                     <div class="post-content">
                         <div class="post-title">
@@ -68,7 +68,7 @@
                 </div>
                 <div class="post-wrap">
                     <div>
-                        <img src="./img/post_img_3.png" alt="">
+                        <img src="<?php echo get_template_directory_uri();?>/img/post_img_3.png" alt="">
                     </div>
                     <div class="post-content">
                         <div class="post-title">
@@ -82,7 +82,7 @@
                 </div>
                 <div class="post-wrap">
                     <div>
-                        <img src="./img/post_img_4.png" alt="">
+                        <img src="<?php echo get_template_directory_uri();?>/img/post_img_4.png" alt="">
                     </div>
                     <div class="post-content">
                         <div class="post-title">
@@ -96,7 +96,7 @@
                 </div>
                 <div class="post-wrap">
                     <div>
-                        <img src="./img/post_img_5.png" alt="">
+                        <img src="<?php echo get_template_directory_uri();?>/img/post_img_5.png" alt="">
                     </div>
                     <div class="post-content">
                         <div class="post-title">
@@ -111,7 +111,7 @@
                 </div>
                 <div class="post-wrap">
                     <div>
-                        <img src="./img/post_img_6.png" alt="">
+                        <img src="<?php echo get_template_directory_uri();?>/img/post_img_6.png" alt="">
                     </div>
                     <div class="post-content">
                         <div class="post-title">
