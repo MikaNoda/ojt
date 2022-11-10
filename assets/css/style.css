@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   width: 1152px;
   margin: 0 auto;
@@ -197,4 +198,11 @@ footer {
     font-size: 16px;
     margin-top: 0;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/* 
+Theme Name :Welcome to TechNext
+Theme URI: http://localhost/welcome_to_technext/
+Author:Technext
+Author URI:http://technext.dreamcatcher.jp
+Description:Technextの参考ページ
+ *//*# sourceMappingURL=style.css.map */
