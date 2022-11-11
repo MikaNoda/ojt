@@ -1,7 +1,7 @@
 <!-- header読み込み -->
 <?php get_header(); ?>
 
-    <main>
+    <main class="content">
         <section class="articles-wrap">
             <h1 class="articles-title">Latest Articles</h1>  
             <article class="articles-content">
