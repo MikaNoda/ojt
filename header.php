@@ -17,6 +17,13 @@
         <label class="hamburger" for="hamburger">
             <span class="pate"></span>
         </label>
+
+<!-- テンプレートファイルのメニューを表示したい場所に記述 -->
+<?php 
+  wp_nav_menu( array( 
+    'theme_location' => 'main-menu' 
+  ) ); 
+?>
         <div class="header-menu">
             <ul class="header-li">
                 <li>Menu01</li>
