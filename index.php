@@ -17,7 +17,7 @@
                     </div>
                     <div class="post-content">
                         <div class="post-title">
-                            <p class="post-date"><?php the_date(); ?></p>
+                            <p class="post-date"><?php echo get_the_date(); ?></p>
                             <p class="post-text"><?php the_title(); ?></p>
                         </div>
                         <div class="readmore">
