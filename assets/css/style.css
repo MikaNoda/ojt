@@ -161,7 +161,8 @@ body {
 
 @media screen and (max-width: 767px) {
   .articles-wrap {
-    width: 100%;
+    width: 86%;
+    margin: 0 auto;
   }
   .articles-wrap h1 {
     margin-top: 40px;
@@ -192,7 +193,7 @@ footer {
 @media screen and (max-width: 767px) {
   footer {
     width: 100%;
-    font-size: 40px;
+    font-size: 14px;
     margin-top: 0;
   }
 }

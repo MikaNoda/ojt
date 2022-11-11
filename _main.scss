@@ -109,7 +109,9 @@
 
 @media screen and (max-width: 767px) {
     .articles-wrap {
-        width: 100%;
+        width: 86%;
+        margin: 0 auto;
+
         h1 {
             margin-top: 40px;
         }
@@ -118,17 +120,11 @@
             display: block;
             grid-template-columns: none;
             gap: 0;
-            // width: 760px;
             margin-top: 15px;
 
             .post-wrap {
-                // width: 630px;
                 margin: 30px auto;
 
-                // img {
-                //      width: 630px;
-                //     /height: auto;
-                // }
 
                 .post-content {
                     .post-title {
