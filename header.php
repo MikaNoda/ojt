@@ -13,6 +13,10 @@
 
 <body>
     <header>
+        <input type="checkbox" id="hamburger">
+        <label class="hamburger" for="hamburger">
+            <span class="pate"></span>
+        </label>
         <div class="header-menu">
             <ul class="header-li">
                 <li>Menu01</li>
