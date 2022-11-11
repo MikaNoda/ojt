@@ -160,6 +160,9 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .articles-wrap {
+    width: 100%;
+  }
   .articles-wrap h1 {
     margin-top: 40px;
   }
@@ -167,16 +170,10 @@ body {
     display: block;
     grid-template-columns: none;
     gap: 0;
-    width: 760px;
     margin-top: 15px;
   }
   .articles-wrap .articles-content .post-wrap {
-    width: 630px;
     margin: 30px auto;
-  }
-  .articles-wrap .articles-content .post-wrap img {
-    width: 630px;
-    height: auto;
   }
   .articles-wrap .articles-content .post-wrap .post-content .post-title {
     height: 300px;
