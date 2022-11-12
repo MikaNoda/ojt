@@ -12,11 +12,21 @@
 </head>
 
 <body>
+    <div class="body-wrap">
+        
     <header>
         <input type="checkbox" id="hamburger">
         <label class="hamburger" for="hamburger">
             <span class="pate"></span>
         </label>
+        <div class="sp-nav">
+            <ul class="sp-menu">
+                <li>Menu01</li>
+                <li>Menu02</li>
+                <li>Menu03</li>
+                <li>Menu04</li>
+            </ul>
+        </div>
 
 <!-- テンプレートファイルのメニューを表示したい場所に記述 -->
 

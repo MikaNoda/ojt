@@ -110,5 +110,6 @@
             </article>
         </section>
     </main>
+</div>
    <!-- footer読み込み -->
    <?php get_footer(); ?>
