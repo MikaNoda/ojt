@@ -1,4 +1,4 @@
-.body-wrap {
+.body-wrap{
     width: 1152px;
     margin: 0 auto;
 
@@ -77,6 +77,10 @@
 
 @media screen and (max-width:767px) {
     
+    .body-wrap{
+        width: 100%;
+    }
+
     .header-menu {
         display: none;
     }
@@ -133,6 +137,7 @@
         .sp-p{
             display: block;
             text-align: center;
+            font-size: 20px;
         }
 
 
@@ -144,16 +149,20 @@
         // display: block;
         position: fixed;
         right: -100%;
+        top: 195px;
         width: 100%;
-        height: auto;
-        margin-left: auto;
+        height: 50%;
+        font-weight: bold;
+        // margin-left: auto;
+
         /* メニューを縦に */
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
-        color: #efefef;
-        background-color: rgba(167, 148, 58, 0.7);
+        color: black;
+        background-color: white;
+        opacity: .95;
         transition: .3s;
     }
 
@@ -168,7 +177,7 @@
         display: block;
         position: fixed;
         top: 90px;
-        right: 5%;
+        right: 10%;
         width: 30px;
         height: 30px;
         cursor: pointer;
@@ -202,45 +211,23 @@
     }
 
     // メニューオープン時
-    .pate.open{
-        // 真ん中の線を透明に
-        background-color: transparent;
 
-        &::before,&::after{
-            content: "";
-            // 上下の線の色
-            background-color: black;
-            transition: .2s;
-        }
-
-        &::before{
-            // 上の線を傾ける
-            transform: rotate(45deg);
-        }
-        &::after{
-            // 下の線を傾ける
-            transform: rotate(-45deg);
-        }
-    }
-
-
-
-    // #hamburger{
-    //         display: none;
+    #hamburger.open{
+            // display: none;
             
-    //         &:checked + .hamburger .pate{
-    //             background-color: transparent;
-    //         }
-    //         &:checked + .hamburger .pate::before{
-    //             transform: rotate(45deg) translate(5px,5px);
-    //         }
-    //         &:checked + .hamburger .pate::after{
-    //             transform: rotate(-45deg) translate(7px,-8px);
-    //         }
-    //         &:checked ~ .hamburger .header-menu{
-    //             right: 0;
-    //         }
-    //     }
+            &:checked + .hamburger .pate{
+                background-color: transparent;
+            }
+            &:checked + .hamburger .pate::before{
+                transform: rotate(45deg) translate(5px,5px);
+            }
+            &:checked + .hamburger .pate::after{
+                transform: rotate(-45deg) translate(7px,-8px);
+            }
+            &:checked ~ .header-menu{
+                right: 0;
+            }
+        }
 
     // ハンバーガーメニューここまで
 

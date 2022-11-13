@@ -76,7 +76,7 @@
                         border-bottom: solid 1px black;
                         position: absolute;
                         top: 25px;
-                        right: -1px;
+                        right: 0;
                     }
 
                     // &:hover::after {
@@ -127,20 +127,44 @@
             gap: 0;
             margin-top: 20px;
 
+
             .post-wrap {
                 // margin: 30px auto;
                 margin-bottom: 30px;
 
+                &:hover .readmore::after {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 100%;
+                bottom: 0;
+                width: 95px;
+                transform: translateX(-100%);
+                transform: 15s;
+                border-bottom: solid 1px black;
+                animation: border_anim .6s linear forwards;
+                }
+
+                @keyframes border_anim {
+                    0% {
+                        width: 14px;
+                    }
+
+                    100% {
+                        width: 95px;
+                    }
+                }
 
                 .post-content {
                     padding-bottom: 25px;
 
                     .post-title {
-                        font-size: 24px;
-                        height: 180px;
+                        font-size: 20px;
+                        height: 250px;
+                        padding: 10px 12px;
                     }
                     .readmore{
-                        font-size: 20px;
+                        font-size: 15px;
                     }
                 }
                 

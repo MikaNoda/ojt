@@ -11,31 +11,29 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
-<body class="body-wrap">
-    
-        
+<body>
+    <div class="body-wrap">
     <header>
         <input type="checkbox" id="hamburger">
         <label class="hamburger" for="hamburger">
             <span class="pate"></span>
         </label>
-        <div class="sp-nav">
-            <ul class="sp-menu">
-                <li>Menu01</li>
-                <li>Menu02</li>
-                <li>Menu03</li>
-                <li>Menu04</li>
-            </ul>
+        <div class="sp-menu">
+            <?php 
+                wp_nav_menu( array( 
+              'theme_location' => 'main-menu' 
+              ) ); 
+            ?>
         </div>
 
 <!-- テンプレートファイルのメニューを表示したい場所に記述 -->
 
         <div class="header-menu">
             <?php 
-            wp_nav_menu( array( 
-          'theme_location' => 'main-menu' 
-          ) ); 
-         ?>
+                wp_nav_menu( array( 
+              'theme_location' => 'main-menu' 
+              ) ); 
+            ?>
         </div>
         <div class="content">
             <div class="kv">
