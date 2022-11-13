@@ -5,12 +5,15 @@
         <section class="articles-wrap">
             <h1 class="articles-title">Latest Articles</h1>  
             <article class="articles-content">
-                  <!-- メインループの記載 繰り返し　コロン構文-->
+            <!-- 最大６件まで表示 -->
+            <?php query_posts('posts_per_page=6'); ?>
+            <!-- メインループの記載 繰り返し　コロン構文-->
             <?php
              if(have_posts()):
              while(have_posts()):
               the_post();
             ?>  
+            
                 <div class="post-wrap">
                     <div>
                         <img src="<?php the_post_thumbnail_url('medium');?>" alt="">
@@ -26,7 +29,7 @@
                     </div>
                 </div>
                 <?php
-                  endwhile;
+                  endwhile; 
                   else:
                  ?>
                 <div class="post-wrap">
@@ -110,6 +113,5 @@
             </article>
         </section>
     </main>
-</div>
    <!-- footer読み込み -->
    <?php get_footer(); ?>

@@ -11,8 +11,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
-<body>
-    <div class="body-wrap">
+<body class="body-wrap">
+    
         
     <header>
         <input type="checkbox" id="hamburger">

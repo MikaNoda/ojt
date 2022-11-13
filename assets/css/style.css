@@ -54,9 +54,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  .body-wrap {
-    width: 100%;
-  }
   .header-menu {
     display: none;
   }
@@ -170,6 +167,7 @@
 .articles-wrap h1 {
   text-align: center;
   font-size: 25px;
+  font-weight: bold;
   margin-top: 80px;
 }
 .articles-wrap .articles-content {
@@ -239,7 +237,6 @@
   .articles-wrap h1 {
     margin-top: 40px;
     font-size: 45px;
-    font-weight: bold;
   }
   .articles-wrap .articles-content {
     display: block;
@@ -254,12 +251,16 @@
     padding-bottom: 25px;
   }
   .articles-wrap .articles-content .post-wrap .post-content .post-title {
-    font-size: 16px;
+    font-size: 24px;
     height: 180px;
+  }
+  .articles-wrap .articles-content .post-wrap .post-content .readmore {
+    font-size: 20px;
   }
 }
 footer {
-  width: 100%;
+  width: 100vw;
+  min-width: 1152px;
   font-size: 10px;
   color: white;
   background-color: black;
@@ -270,7 +271,6 @@ footer {
 
 @media screen and (max-width: 767px) {
   footer {
-    width: 100%;
     font-size: 14px;
     margin-top: 0;
   }
