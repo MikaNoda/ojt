@@ -8,7 +8,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/reset.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
 </head>
 
 <body>
@@ -35,15 +40,33 @@
               ) ); 
             ?>
         </div>
+       
         <div class="content">
             <div class="kv">
                 <img class="kv-logo" src="<?php echo get_template_directory_uri();?>/img/logo.png" alt="logo">
-                <img class="kv-img" src="<?php echo get_template_directory_uri();?>/img/visual_1_pc.png" alt="kv">
-                <img class="sp-img" src="<?php echo get_template_directory_uri();?>/img/visual_1_sp.png" alt="kv">
+                
+                <ul class="slide-items">
+                 <li><img class="kv-img" src="<?php echo get_template_directory_uri();?>/img/visual_1_pc.png" alt="kv">
+                     <img class="sp-img" src="<?php echo get_template_directory_uri();?>/img/visual_1_sp.png" alt="kv">
+                 </li>
+                 <li><img class="kv-img" src="<?php echo get_template_directory_uri();?>/img/visual_2_pc.png" alt="kv">
+                     <img class="sp-img" src="<?php echo get_template_directory_uri();?>/img/visual_2_sp.png" alt="kv">
+                 </li>
+            
+            <li><img class="kv-img" src="<?php echo get_template_directory_uri();?>/img/visual_3_pc.png" alt="kv">
+                     <img class="sp-img" src="<?php echo get_template_directory_uri();?>/img/visual_3_sp.png" alt="kv">
+                 </li>
+                 <li><img class="kv-img" src="<?php echo get_template_directory_uri();?>/img/visual_4_pc.png" alt="kv">
+                     <img class="sp-img" src="<?php echo get_template_directory_uri();?>/img/visual_4_sp.png" alt="kv">
+                 </li>
+                 </ul>
+                
                 <img class="kv-text" src="<?php echo get_template_directory_uri();?>/img/visual_text_pc.png" alt="text">
                 <img class="sp-text" src="<?php echo get_template_directory_uri();?>/img/visual_text_sp.png" alt="text">
             </div>
             <p class="kv-p">進化し続ける「街」アメリカンビレッジマガジン</p>
             <p class="sp-p">進化し続ける「街」<br>アメリカンビレッジマガジン</p>
         </div>
-    </header>
+    </header>    
+    
+</body>

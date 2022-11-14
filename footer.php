@@ -2,7 +2,9 @@
         <span>Copyright<small>&copy;</small>Shinohara.ALL RIGHTS RESERVED.</span>
 </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <script src="<?php echo get_template_directory_uri();?>/script.js"></script>
 </body>
 
