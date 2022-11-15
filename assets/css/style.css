@@ -24,25 +24,27 @@
   margin: 0 auto;
 }
 
+.kv {
+  position: relative;
+}
 .kv .sp-img,
 .kv .sp-text {
   display: none;
 }
 .kv .kv-logo {
   position: absolute;
-  top: 5px;
-  left: 50px;
+  top: -12%;
+  left: -8%;
   z-index: 1;
 }
 .kv .kv-img {
-  position: relative;
   margin-top: 50px;
 }
 .kv .kv-text {
   position: absolute;
   z-index: 1;
-  bottom: 230px;
-  right: 140px;
+  bottom: -12%;
+  right: -3%;
 }
 
 .kv-p {

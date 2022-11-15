@@ -59,6 +59,12 @@
                  <li><img class="kv-img" src="<?php echo get_template_directory_uri();?>/img/visual_4_pc.png" alt="kv">
                      <img class="sp-img" src="<?php echo get_template_directory_uri();?>/img/visual_4_sp.png" alt="kv">
                  </li>
+                 <li><img class="kv-img" src="<?php echo get_template_directory_uri();?>/img/visual_5_pc.png" alt="kv">
+                     <img class="sp-img" src="<?php echo get_template_directory_uri();?>/img/visual_5_sp.png" alt="kv">
+                 </li>
+                 <li><img class="kv-img" src="<?php echo get_template_directory_uri();?>/img/visual_6_pc.png" alt="kv">
+                     <img class="sp-img" src="<?php echo get_template_directory_uri();?>/img/visual_6_sp.png" alt="kv">
+                 </li>
                  </ul>
                 
                 <img class="kv-text" src="<?php echo get_template_directory_uri();?>/img/visual_text_pc.png" alt="text">

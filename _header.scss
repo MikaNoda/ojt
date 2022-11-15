@@ -31,7 +31,7 @@
 
 }
 
-.kv {
+.kv {position: relative;
 
     .sp-img,
     .sp-text {
@@ -40,15 +40,15 @@
 
     .kv-logo {
         position: absolute;
-        top: 5px;
-        left: 50px;
+        top: -12%;
+        left: -8%;
         z-index: 1;
 
 
     }
 
     .kv-img {
-        position: relative;
+       
         margin-top: 50px;
 
     }
@@ -56,10 +56,8 @@
     .kv-text {
         position: absolute;
         z-index: 1;
-        bottom: 230px;
-        right: 140px;
-
-
+        bottom: -12%;
+        right: -3%;
 
     }
 
