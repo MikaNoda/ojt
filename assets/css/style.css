@@ -1,4 +1,12 @@
 @charset "UTF-8";
+/* 
+Theme Name :Welcome to TechNext
+Theme URI: http://localhost/wp-ojt/
+Author:Technext
+Author URI:http://technext.dreamcatcher.jp
+Description:Technextの参考ページ
+ */
+ 
 .body-wrap {
   width: 1152px;
   margin: 0 auto;
@@ -307,10 +315,4 @@ footer {
     margin-top: 0;
   }
 }
-/* 
-Theme Name :Welcome to TechNext
-Theme URI: http://localhost/wp-ojt/
-Author:Technext
-Author URI:http://technext.dreamcatcher.jp
-Description:Technextの参考ページ
- *//*# sourceMappingURL=style.css.map */
+
